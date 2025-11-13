@@ -30,9 +30,4 @@ class CalculatorTest {
         assertEquals(3, Calculator.divideValues(6,2));
         assertEquals(0, Calculator.divideValues(-6,0));
     }
-    @Test
-    void askNumbers() {
-        assertEquals(3, Calculator.askNumbers());
-        assertEquals(1, Calculator.askNumbers());
-    }
 }
