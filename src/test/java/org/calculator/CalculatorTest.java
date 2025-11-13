@@ -19,15 +19,20 @@ class CalculatorTest {
     }
 
     @Test
-    void multipleValues() {
-        assertEquals(6, Calculator.multipleValues(2,3));
-        assertEquals(-6, Calculator.multipleValues(-2,3));
-        assertEquals(0, Calculator.multipleValues(2,0));
+    void multiplyValues() {
+        assertEquals(6, Calculator.multiplyValues(2,3));
+        assertEquals(-6, Calculator.multiplyValues(-2,3));
+        assertEquals(0, Calculator.multiplyValues(2,0));
     }
 
     @Test
     void divideValues() {
         assertEquals(3, Calculator.divideValues(6,2));
         assertEquals(0, Calculator.divideValues(-6,0));
+    }
+    @Test
+    void askNumbers() {
+        assertEquals(3, Calculator.askNumbers());
+        assertEquals(1, Calculator.askNumbers());
     }
 }
